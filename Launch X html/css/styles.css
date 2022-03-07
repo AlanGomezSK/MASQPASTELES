@@ -1,0 +1,133 @@
+:root{
+    --fuenteencabezado:'Oswald', sans-serif;
+    --fuenteparrafos:'Source Sans Pro', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteparrafos);
+    padding: 0;
+    margin: 0;
+}
+h2,h3{
+    font-family: var(--fuenteencabezado);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+image{
+    width: 100%;
+}
+/*ECABEZADO*/
+.encabezado{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .encabezado{
+        align-items:center;
+        justify-content:space-evenly;
+        display: flex;
+        text-transform: uppercase;
+        background-color: rgb(0, 0, 0);
+    }
+}
+.encabezado_Logo{
+    width: 25rem;
+}
+/*NAVEGADOR*/
+.navegador_opciones{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-transform: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .navegador_opciones{
+        margin: 0 3rem;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        text-transform: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+/*BODY*/
+/*PRODUCTOS*/
+.pasteles{
+    grid-template-columns: repeat(2,1fr);
+}
+@media (min-width: 768px) {
+    .pasteles{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        padding: 0 15rem;
+    }
+}
+
+.pasteles_producto{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.08);
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    border-radius: .5rem;
+}
+.pasteles_producto--imagen{
+    margin-top: 2rem;
+}
+.pasteles_producto--precio{
+    font-size:2rem;
+    font-weight: bold;
+}
+/*DECORACIONES*/
+.decoraciones{
+    padding: 0 10rem;
+}
+.decoraciones_parrafos{
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0 5rem;
+    margin: 4rem;
+}
+.decoracion_columnas{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: justify;
+    align-items:center;
+    gap: 2rem;
+}
+.ecoracion_columnas--img{
+    width: 100%;
+}
+.formulario{
+    margin: 0 2rem;
+    font-size: 1.8rem;
+}
+.input_sabores,.input_decoracion,.input_datospersonales{
+    font-weight: bolder;
+    margin: 0 5rem;
+}
